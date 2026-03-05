@@ -28,6 +28,8 @@
 		"cf-typegen": "wrangler types",
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
-		"start": "wrangler dev"
+		"start": "wrangler dev",
+		"typecheck": "tsc --noEmit",
+		"lint": "tsc --noEmit"
 	}
 }

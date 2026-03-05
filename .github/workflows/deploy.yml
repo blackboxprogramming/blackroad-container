@@ -2,10 +2,14 @@ name: Deploy
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
+
+permissions:
+  contents: read
 
 jobs:
   deploy:
     uses: blackboxprogramming/blackroad-deploy/.github/workflows/cloudflare-deploy.yml@main
     with:
       project: blackroad-io
+    secrets: inherit
